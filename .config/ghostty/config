@@ -1,0 +1,13 @@
+theme=nord
+background-opacity=0.9
+background-blur-radius=5
+window-height=40
+window-width=185
+font-size=15
+font-family=JetBrains Mono
+cursor-style=block
+cursor-style-blink=false
+macos-titlebar-style=tabs
+macos-option-as-alt=true
+quit-after-last-window-closed=true
+confirm-close-surface=false
