@@ -1,6 +1,3 @@
-tap "alienator88/cask"
-tap "homebrew/services"
-tap "vladkens/tap"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
 # C parser in Python
