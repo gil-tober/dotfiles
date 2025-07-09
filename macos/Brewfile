@@ -1,41 +1,15 @@
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
-# C parser in Python
-brew "pycparser"
-# C Foreign Function Interface for Python
-brew "cffi"
-# General-purpose data compression with high compression ratio
-brew "xz"
 # Official Amazon AWS command-line interface
 brew "awscli"
-# C library implementing the SSH2 protocol
-brew "libssh2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Modern, maintained replacement for ls
 brew "eza"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# Kubernetes package manager
-brew "helm"
-# Kubernetes command-line interface
-brew "kubernetes-cli"
-# Template-free customization of Kubernetes YAML manifests
-brew "kustomize"
-# Simple terminal UI for git commands
-brew "lazygit"
-# LLVM's OpenMP runtime library
-brew "libomp"
 # Mac App Store command-line interface
 brew "mas"
-# Open source relational database management system
-brew "mysql", restart_service: :changed
-# Package compiler and linker metadata toolkit
-brew "pkgconf"
-# Object-relational database system
-brew "postgresql@14", restart_service: :changed
-# Editor of encrypted files
-brew "sops"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
@@ -62,6 +36,8 @@ cask "arc"
 cask "datagrip"
 # Voice and text chat software
 cask "discord"
+# App to build and share containerised applications and microservices
+cask "docker-desktop"
 # Flip clock screensaver
 cask "fliqlo"
 # Terminal emulator that uses platform-native UI and GPU acceleration
@@ -97,16 +73,12 @@ cask "telegram-desktop"
 # Open-source code editor
 cask "visual-studio-code"
 mas "Hand Mirror", id: 1502839586
-mas "Keynote", id: 409183694
 mas "Lightshot Screenshot", id: 526298438
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
 mas "PDFgear", id: 6469021132
 mas "Photomator", id: 1444636541
 vscode "arcticicestudio.nord-visual-studio-code"
-vscode "atommaterial.a-file-icon-vscode"
 vscode "charliermarsh.ruff"
-vscode "donjayamanne.python-environment-manager"
+vscode "christian-kohler.path-intellisense"
 vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "mohsen1.prettify-json"

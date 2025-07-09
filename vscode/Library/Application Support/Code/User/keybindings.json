@@ -1,0 +1,103 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "command": "workbench.action.toggleSidebarVisibility",
+        "key": "cmd+[IntlBackslash]"
+    },
+    {
+        "command": "editor.action.revealDeclaration",
+        "key": "cmd+b"
+    },
+    {
+        "command": "workbench.action.terminal.toggleTerminal",
+        "key": "cmd+f12",
+        "when": "terminal.active"
+    },
+    {
+        "command": "python.execInTerminal-icon",
+        "key": "ctrl+cmd+r"
+    },
+    {
+        "command": "-rerunSearchEditorSearch",
+        "key": "shift+cmd+r",
+        "when": "inSearchEditor"
+    },
+    {
+        "command": "workbench.action.replaceInFiles",
+        "key": "shift+cmd+r"
+    },
+    {
+        "command": "-workbench.action.replaceInFiles",
+        "key": "shift+cmd+h"
+    },
+    {
+        "command": "editor.action.moveLinesDownAction",
+        "key": "ctrl+shift+down",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "command": "-editor.action.moveLinesDownAction",
+        "key": "alt+down",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "command": "editor.action.moveLinesUpAction",
+        "key": "ctrl+shift+up",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "command": "-editor.action.moveLinesUpAction",
+        "key": "alt+up",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "command": "cursorColumnSelectDown",
+        "key": "ctrl+cmd+down",
+        "when": "textInputFocus"
+    },
+    {
+        "command": "cursorColumnSelectUp",
+        "key": "ctrl+cmd+up",
+        "when": "textInputFocus"
+    },
+    {
+        "command": "editor.action.deleteLines",
+        "key": "shift+delete",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "command": "editor.action.formatDocument",
+        "key": "ctrl+cmd+l"
+    },
+    {
+        "command": "workbench.files.action.showActiveFileInExplorer",
+        "key": "shift+cmd+/"
+    },
+    {
+        "command": "workbench.action.nextEditor",
+        "key": "ctrl+right"
+    },
+    {
+        "command": "workbench.action.previousEditor",
+        "key": "ctrl+left"
+    },
+    {
+        "command": "-workbench.action.focusFirstEditorGroup",
+        "key": "cmd+1"
+    },
+    {
+        "command": "workbench.view.explorer",
+        "key": "cmd+1",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "alt+enter",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+.",
+        "command": "-editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+]

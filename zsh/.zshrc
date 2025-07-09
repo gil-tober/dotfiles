@@ -59,7 +59,7 @@ alias gcb='git checkout -b'
 alias gs='git status'
 alias ga='git add .'
 alias gc='git commit -m'
-alias cat='bat'
+alias cat='bat --theme="Nord"'
 alias aaw='airflow webserver'
 alias aas='airflow scheduler'
 alias aat='airflow triggerer'
@@ -74,4 +74,6 @@ eval "$(uv generate-shell-completion zsh)"
 
 # Show hidden files/folders by default
 defaults write com.apple.finder AppleShowAllFiles -boolean true; killall Finder; 
-autoload -U compinit; compinit
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/gilt/.docker/completions $fpath)
+# End of Docker CLI completions

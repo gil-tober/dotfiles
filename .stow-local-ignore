@@ -1,6 +1,7 @@
-.DS_Store
-.git
+*/.DS_Store
 .gitignore
-^/COPYING
-^/LICENSE.*
-^/README.*
+bin/
+COPYING
+LICENSE.*
+macos/
+README.*
