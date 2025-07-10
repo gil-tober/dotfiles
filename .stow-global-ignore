@@ -1,0 +1,8 @@
+# Link the global stow ignore file from the repo root to the home directory
+# ln -s "$HOME/.dotfiles/.stow-global-ignore" "$HOME/.stow-global-ignore"
+
+\.DS_Store
+\.gitignore
+^bin/
+^macos/
+README.*
