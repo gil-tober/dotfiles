@@ -1,4 +1,4 @@
-# Custom keybindings.
+# Custom keybindings for Zsh.
 
 bindkey -e
 bindkey '^p' history-search-backward

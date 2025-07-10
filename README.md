@@ -1,61 +1,59 @@
 # Dotfiles
 
-This repository contains my personal configuration files (dotfiles) for macOS and Linux systems.
+Personal configuration files for macOS and Linux systems, organized using the [GNU Stow](https://www.gnu.org/software/stow/) "packages" convention.
 
-## Getting Started
+## Quick Start
 
-To set up your environment using these dotfiles, follow the steps below.
+1. **Clone this repository**
 
-### 1. Clone the Repository
+   ```sh
+   git clone git@github.com:gil-tober/dotfiles.git ~/.dotfiles
+   cd ~/.dotfiles
+   ```
 
-```sh
-git clone git@github.com:gil-tober/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-```
+2. **Install Homebrew**
 
-### 2. Install Homebrew
+   Homebrew is required for package management:
 
-Homebrew is required to install packages listed in the `Brewfile`.  
-If you don't have Homebrew, install it with:
+   ```sh
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
 
-```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
+3. **Install Packages from Brewfile (includes GNU Stow)**
 
-### 3. Install Brewfile Packages
+   ```sh
+   brew bundle
+   ```
 
-```sh
-brew bundle
-```
+   This installs all packages and applications listed in the `Brewfile`, including GNU Stow.
 
-This will install all the packages and applications specified in the `Brewfile`.
+4. **Symlink the global Stow ignore file**
 
-### 4. Install GNU Stow
+   To ensure Stow ignores the correct files, symlink `.stow-global-ignore` to your home directory:
 
-GNU Stow is used to symlink the configuration files to your home directory.
+   ```sh
+   ln -s ~/.dotfiles/.stow-global-ignore ~/.stow-global-ignore
+   ```
 
-```sh
-brew install stow
-```
+5. **Symlink Dotfiles using Stow (Packages Convention)**
 
-### 5. Symlink Dotfiles
+   Each directory in this repo is a "package" (e.g., `zsh`, `vim`, `git`). To symlink all configurations:
 
-Use GNU Stow to symlink the desired configuration files. For example, to symlink all configs:
+   ```sh
+   stow */
+   ```
 
-```sh
-stow */
-```
+   Or symlink a specific package (e.g., `zsh`):
 
-Or to symlink a specific config (e.g., `zsh`):
+   ```sh
+   stow zsh
+   ```
 
-```sh
-stow zsh
-```
+## Tips
 
-## Notes
-
-- Review the contents of each directory before stowing to avoid overwriting existing files.
-- Customize the dotfiles as needed for your workflow.
+- **Review**: Check each package directory before stowing to avoid overwriting existing files.
+- **Customize**: Edit configs as needed for your workflow.
+- **Safe Stowing**: Use `stow -n` for a dry run before making changes.
 
 ---
 

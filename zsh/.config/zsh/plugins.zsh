@@ -1,12 +1,12 @@
-# Zinit plugin and snippet definitions.
+# Zinit plugin and snippet definitions for Zsh.
 
-# Add in zsh plugins
+# Load Zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
-# Add in snippets
+# Load OMZ (Oh My Zsh) snippets
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
 zinit snippet OMZP::aws

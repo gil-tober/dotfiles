@@ -1,4 +1,4 @@
-# Shell integrations that should be evaluated at the end of the startup process.
+# Shell integrations to be evaluated at the end of the Zsh startup process.
 
 eval "$(starship init zsh)"
 eval "$(zoxide init --cmd=cd zsh)"

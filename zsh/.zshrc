@@ -1,14 +1,12 @@
-# ~/.zshrc
-# This is the main configuration file for interactive Zsh sessions.
-# Its primary job is to source the modular configuration files in order.
+# ~/.zshrc - Main configuration file for interactive Zsh sessions.
+# Loads Zinit and modular configuration files.
 
-# Load Zinit - must be sourced before loading plugins
+# Load Zinit (must be sourced before loading plugins)
 source /opt/homebrew/opt/zinit/zinit.zsh
 
-# --- Source Custom Configuration Files ---
+# Source custom configuration files from $ZSH_CONFIG_DIR if it exists
 ZSH_CONFIG_DIR="$HOME/.config/zsh"
 
-# Check if the config directory exists before sourcing files
 if [ -d "$ZSH_CONFIG_DIR" ]; then
   source "${ZSH_CONFIG_DIR}/plugins.zsh"
   source "${ZSH_CONFIG_DIR}/history.zsh"

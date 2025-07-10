@@ -1,4 +1,4 @@
-# Shell history settings.
+# Shell history configuration for Zsh.
 
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
