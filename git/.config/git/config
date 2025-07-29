@@ -16,3 +16,6 @@
         prune = true
 [help]
         autocorrect = prompt
+[alias]
+        st = status --short
+        lol = log --oneline --graph
