@@ -13,3 +13,4 @@ theme=nord
 title=" "
 window-height=40
 window-width=185
+shell-integration-features=title,ssh-env,ssh-terminfo
